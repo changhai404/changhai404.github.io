@@ -67,6 +67,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Mybatis 延迟加载策略]]></title>
+    <url>%2F2018%2F08%2F15%2FMyBatis%E5%85%A5%E9%97%A8%2F</url>
+    <content type="text"><![CDATA[1.延迟加载概述 1.1.延时加载是在进行有可能需要多表查询的数据时使用的策略,他最大的特点是当你什么时候需要数据,什么时候进行查询1.2.根据表的关联进行查寻优点:先从单表查询，需要时再从关联表去关联查询，大大提高数据库性能，因为查询单表要比关联查询多张表速度要快 2.使用延时加载2.1实现需求需求：查询账户(Account)信息并且关联查询用户(User)信息。如果先查询账户(Account)信息即可满足要求，当我们需要查询用户(User)信息时再查询用户(User)信息。把对用户(User)信息的按需去查询就是延迟加载。工程目录结构如下： 2.2使用 Assocation 实现延迟加载需求：查询账户信息同时查询用户信息。Account 实体类中加入一个 User 类的对象12345678public class Account &#123;private int id;private int uid;private double money;//加入一个用户对象的信息 has a 关系private User user; //省略 getter 与 setter&#125; 2.3 第一步：只查询账户信息 的 DAO 接口AccountDao 类中添加查询账户信息的方法: 2.1开启全局配置2.1开启全局配置1234 &lt;!-- 在sqlMapconfig中配置--&gt; &lt;settings&gt; &lt;setting name="lazyLoadingEnabled" value="true"/&gt;&lt;/settings&gt;]]></content>
+      <categories>
+        <category>Mybatis</category>
+      </categories>
+      <tags>
+        <tag>Mybatis</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[关于Linux终端的常用命令（一）]]></title>
     <url>%2F2018%2F08%2F15%2F%E5%85%B3%E4%BA%8ELinux%E7%9A%84%E7%BB%88%E7%AB%AF%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%EF%BC%88%E4%B8%80%EF%BC%89%2F</url>
     <content type="text"><![CDATA[前言 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Linux由Unix发展而来，于1991年林纳斯（linus）发布，分为内核与发行版，内核（kernel）是系统的心脏，是运行程序和管理像磁盘和打印机等硬件设备的核心程序，主要做一些基本的，也是重要的操作。比如进程管理、内存管理、磁盘管理、驱动管理、电源管理、安全管理等。Linux 内核版本又分为 稳定版 和 开发版，两种版本是相互关联，相互循环。稳定版：具有工业级强度，可以广泛地应用和部署。新的稳定版相对于较旧的只是修正一些 bug 或加入一些新的驱动程序开发版：由于要试验各种解决方案，所以变化很快内核源码网址：点这里&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Linux发行版通常包含了包括桌面环境、办公套件、媒体播放器、数据库等应用软件。主要有：ubantu，centos，redhat, debian等，这里主要是ubantu的基本常用命令。### Linux终端命令基本使用———-终端命令格式：Command 【-options（选项，可以配合使用）】【parameter（对象）】 1. 查看文件信息（在当前路径下输入即可查看当前路径文件）123ls -l # 查看详情ls -a # 查看所有文件ls -h # 配合-l显示文件大小 2. 通配符，可以代替字符12* # 代表0个或多个任意字符？ # 代表任意一个字符 3. 清屏12clear按键：ctrl +L 4. 切换路径（分为相对路径和绝对路径，相对路径从当前目录开始；绝对路径从根目录（/）开始）12cd ./Desktop # .代表当前路径cd ../ # ..代表上一级路径 5. 显示当前绝对路径1pwd 6. 创建目录12mkdir 目录名mkdir a/b/c -p # 创建级联目录 7. 创建文件（文件名指定后缀名）12touch 文件名touch 文件1 文件2 文件3 # 创建多个文件 8. 删除文件，目录123rm -i # 删除文件给予交互提示rm -f # 强制删除rm -r # 递归删除，删除目录 9. 拷贝文件，目录12345cp 【源文件名】【目标目录路径】# 拷贝文件不能在本目录下，不能重名例： cp 1.txt ./a 将1.txt复制到当前目录的a目录下cp 【源文件名】【目标文件名】# 拷贝并重命名例： cp a.txt b.txt 复制a并命名为b选项： -r 拷贝文件夹 -f 强制拷贝 -i交互提示 10. 移动文件，文件夹12mv 【源文件名】【移动目标路径】# 移动目录不用-r 例：mv 1.txt ./a 将1文件移动到当前目录的a目录下mv 【源文件名】【移动后文件名】# 重命名，不能重名 例： mv a.py b.py 11. 树状显示目录1tree 12. 查看历史命令12history # 显示历史命令！数字 # 引用某一行命令 例：！20，引用20行命令 13. 查看，写入文件内容12cat 【文件名】 # 查看 例：cat 1.txtgedit 【文件名】# 写入 例 ： gedit 1.txt 14. 重定向（将命令执行结果保存到另一个文件中）123&gt; # 覆盖&gt;&gt; # 追加 例： cat 1.txt 2.txt &gt; 3,txt 将1,2两个文件的内容重定向到3里，3.txt不存在则创建 15. 分屏显示内容1more # 分屏显示文件内容，一般接到其他命令后，空格切换屏幕]]></content>
