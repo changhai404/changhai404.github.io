@@ -1979,7 +1979,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d4a3ff;
+  background: #65daff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3236,6 +3236,16 @@ body {
 }
 .footer-inner {
   color: #fffafa;
+}
+.hider_title {
+  font-family: "Microsoft Yahei";
+  cursor: pointer;
+}
+.close:after {
+  content: "▼";
+}
+.open:after {
+  content: "▲";
 }
 #sidebar {
   background: url("http://img5.duitang.com/uploads/item/201507/18/20150718161008_uvkjhljltH3.thumb.700_0.jpeg");
