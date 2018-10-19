@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://changhai404.com/"/>
-  <updated>2018-08-17T04:31:08.000Z</updated>
+  <updated>2018-10-19T06:17:49.322Z</updated>
   <id>http://changhai404.com/</id>
   
   <author>
@@ -17,33 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>我的第一篇博客</title>
-    <link href="http://changhai404.com/2018/08/14/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://changhai404.com/2018/08/14/我的第一篇博客/</id>
-    <published>2018-08-14T14:01:40.000Z</published>
-    <updated>2018-08-17T04:31:08.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><div><br>        学习编程之后，逐渐在这一领域有了一定的了解，在CSDN博客上看各种大神写的文章，那些未知的技术，引起了我的求知欲，同时看着别人炫酷的博客，也让我有了一个搭建自己的博客网站的想法，来对自己学过的知识，进行总结梳理，于是开始了我的博客之旅。<br></div><h4 id="1-搭建自己的博客网站需要耐心"><a href="#1-搭建自己的博客网站需要耐心" class="headerlink" title="1.搭建自己的博客网站需要耐心"></a>1.搭建自己的博客网站需要耐心</h4><div><br>        对于我这种博客小白来说，搭建自己的个人博客，着实费了一番功夫，经过大约一周时间的研究学习，查阅各种资料，解决各种bug，尝试不同的主题效果，终于搭建好我自己的个人博客网站，可以开始写自己的第一篇博客文章，此刻我的心情是非常激动的，毕竟这大约一周时间的努力，取得了一定的成果，效果还比较满意，不过还要继续完善。<br>        总的来说，过程非常繁琐，需要耐心，网上教程都很详细，一步步按照教程走即可，但是过程中有些细节需要综合自己的实际情况来定，不然会出一些难解决的bug，所以要懂一些js，css知识的原理。我用的是github+hexo搭建的，个人认为比较简单吧，也研究过ruby，jkelly那些方法，不过没安装上环境，就换了hexo，有兴趣的可以好好研究下。<br></div><h4 id="2-IT知识研究领域"><a href="#2-IT知识研究领域" class="headerlink" title="2. IT知识研究领域"></a>2. IT知识研究领域</h4><div><br>        我主要学习的是Python，所以我的博客内容主要围绕着python来展开的，当然这只是一种编写程序的语言方式，所以本质上还是编程以及相关内容，比如Linux，web开发，框架，算法，爬虫，人工智能等，我个人对人工智能非常感兴趣，所以也会慢慢往这个方向去靠近，机器学习，神经网络等，自己慢慢研究学习吧。<br></div>        <h4 id="3-写博客文章的一些基本格式与上传命令"><a href="#3-写博客文章的一些基本格式与上传命令" class="headerlink" title="3. 写博客文章的一些基本格式与上传命令"></a>3. 写博客文章的一些基本格式与上传命令</h4><div><br>        为了以后方便写博客，对于我这个博客小白，还是有必要在这里对于一些文章相关格式及命令，进行总结的。<br>        通过github+hexo搭建好博客后，如何创建一篇新博客呢<br>        在搭建博客的时候，会安装git软件，在根目录下打开git，通过git命令来执行，新建一篇博客：<br></div><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo <span class="keyword">new</span> <span class="string">"你的博客的名称"</span></span><br></pre></td></tr></table></figure><br><br><div><br>    然后在根目录文件夹下source/_posts下新生成一个md文件，名称就是你自己起的名字，打开就可以开始写博客啦，要用markdown语法写，所以要提前准备一款编辑器，我个人用的是小书匠编辑器，还不错。<br>    文章的一些格式属性有以下几种可以自己设置：<br></div><br><figure class="highlight subunit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">title: 文章标题</span><br><span class="line">date:  创建时间，这里可以随意修改</span><br><span class="line">categories:  文章分类目录，可以为空</span><br><span class="line"><span class="keyword">tags:</span> 文章标签，可空，多标签请用格式[tag1,tag2,tag3]</span><br><span class="line">description: 对本页的描述，相当于是一个简介，如果这个定义了，就会在首页中出现这里的内容而不会出现整个文章详细内容。</span><br></pre></td></tr></table></figure><br><br><div><br>     然后下面就可以开始写文章了，写完即可通过git上传了<br>    </div> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure><div><br>     即可部署到github上。<br></div><h4 id="4-开启博客之旅"><a href="#4-开启博客之旅" class="headerlink" title="4.开启博客之旅"></a>4.开启博客之旅</h4><div><br>        以前的学习笔记都记录在本子上，或者其他文档里，之后将会慢慢整理在自己的博客上，来完善自己的学习体系，同时搭建自己的博客，让自己的博客更炫酷。<br></div>]]></content>
-    
-    <summary type="html">
-    
-      个人初建博客的一些随笔以及写文章的属性格式等
-    
-    </summary>
-    
-      <category term="随笔" scheme="http://changhai404.com/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-      <category term="第一篇" scheme="http://changhai404.com/tags/%E7%AC%AC%E4%B8%80%E7%AF%87/"/>
-    
-  </entry>
-  
-  <entry>
     <title>DJANGO框架如何实现用户多认证方式登录与第三方授权登录</title>
     <link href="http://changhai404.com/2018/04/21/DJANGO%E6%A1%86%E6%9E%B6%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E5%A4%9A%E8%B4%A6%E5%8F%B7%E7%99%BB%E5%BD%95%E4%B8%8E%E7%AC%AC%E4%B8%89%E6%96%B9%E7%99%BB%E5%BD%95/"/>
     <id>http://changhai404.com/2018/04/21/DJANGO框架如何实现多账号登录与第三方登录/</id>
     <published>2018-04-21T11:38:20.000Z</published>
-    <updated>2018-10-19T05:58:45.134Z</updated>
+    <updated>2018-10-19T06:17:49.322Z</updated>
     
     <content type="html"><![CDATA[<h2 id="多种认证方式登录"><a href="#多种认证方式登录" class="headerlink" title="多种认证方式登录"></a>多种认证方式登录</h2><p>Django框架提供了认证系统，详情看文档<a href="https://yiyibooks.cn/xx/Django_1.11.6/topics/auth/index.html" target="_blank" rel="noopener">Django认证系统官方文档</a></p><p>在这个认证系统中，有一个用户认证的方法authenticate（）来验证一组凭据，默认的是username和password，官方调用源码如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">from django.contrib.auth import authenticate</span><br><span class="line">user = authenticate(username=&apos;john&apos;, password=&apos;secret&apos;)</span><br><span class="line">if user is not None:</span><br><span class="line">    # A backend authenticated the credentials</span><br><span class="line">else:</span><br><span class="line">    # No backend authenticated the credentials</span><br></pre></td></tr></table></figure><p>所以只需要重写这个方法，就可以实现多凭证登录。<br>方法如下：<br>1.在user应用下新建utils.py文件<br>2.定义类继承Modelbackend，重写authenticate方法<br>3.重写规则，代码如下</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"># 重写authenticate方法，继承ModelBackend这个类来重写方法</span><br><span class="line"><span class="keyword">from</span> django.contrib.auth.backends <span class="keyword">import</span> ModelBackend</span><br><span class="line"><span class="keyword">from</span> .models <span class="keyword">import</span> User</span><br><span class="line">class UserModelBackend(ModelBackend):</span><br><span class="line">    def authenticate(self, request, username=None, password=None, **kwargs):</span><br><span class="line">        # 判断用户输入的是手机号还是用户名</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            # 查询对象，如果能查到对象则得到返回的对象</span><br><span class="line">            user = User.objects.filter(mobile=username)</span><br><span class="line">            # 如果不是手机用户，则执行except</span><br><span class="line">        except:</span><br><span class="line">            # 判断是否用户名，与用户名对比</span><br><span class="line">            <span class="keyword">try</span>: </span><br><span class="line">                user = User.objects.filter(username=username)</span><br><span class="line">            except:</span><br><span class="line">                # 都不是返回空</span><br><span class="line">                <span class="keyword">return</span> None</span><br><span class="line">        # 如果查询到用户对象，则检查密码</span><br><span class="line">        <span class="keyword">if</span> user.check_password(password):</span><br><span class="line">            <span class="keyword">return</span> user</span><br><span class="line">        <span class="keyword">return</span> None</span><br></pre></td></tr></table></figure><p>4.配置中设置，settings中添加</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">AUTHENTICATION_BACKENDS=[</span><br><span class="line"><span class="string">'users.utils.UsernameMobileModelBackend'</span>,</span><br><span class="line">]</span><br></pre></td></tr></table></figure><p>即可实现使用用户手机号登录。</p><h2 id="授权第三方登录（QQ为例）"><a href="#授权第三方登录（QQ为例）" class="headerlink" title="授权第三方登录（QQ为例）"></a>授权第三方登录（QQ为例）</h2>]]></content>
     
@@ -233,6 +211,28 @@
     
     
       <category term="Linux命令" scheme="http://changhai404.com/tags/Linux%E5%91%BD%E4%BB%A4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我的第一篇博客</title>
+    <link href="http://changhai404.com/2016/01/01/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://changhai404.com/2016/01/01/我的第一篇博客/</id>
+    <published>2016-01-01T14:01:40.000Z</published>
+    <updated>2018-10-19T06:14:26.197Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><div><br>        学习编程之后，逐渐在这一领域有了一定的了解，在CSDN博客上看各种大神写的文章，那些未知的技术，引起了我的求知欲，同时看着别人炫酷的博客，也让我有了一个搭建自己的博客网站的想法，来对自己学过的知识，进行总结梳理，于是开始了我的博客之旅。<br></div><h4 id="1-搭建自己的博客网站需要耐心"><a href="#1-搭建自己的博客网站需要耐心" class="headerlink" title="1.搭建自己的博客网站需要耐心"></a>1.搭建自己的博客网站需要耐心</h4><div><br>        对于我这种博客小白来说，搭建自己的个人博客，着实费了一番功夫，经过大约一周时间的研究学习，查阅各种资料，解决各种bug，尝试不同的主题效果，终于搭建好我自己的个人博客网站，可以开始写自己的第一篇博客文章，此刻我的心情是非常激动的，毕竟这大约一周时间的努力，取得了一定的成果，效果还比较满意，不过还要继续完善。<br>        总的来说，过程非常繁琐，需要耐心，网上教程都很详细，一步步按照教程走即可，但是过程中有些细节需要综合自己的实际情况来定，不然会出一些难解决的bug，所以要懂一些js，css知识的原理。我用的是github+hexo搭建的，个人认为比较简单吧，也研究过ruby，jkelly那些方法，不过没安装上环境，就换了hexo，有兴趣的可以好好研究下。<br></div><h4 id="2-IT知识研究领域"><a href="#2-IT知识研究领域" class="headerlink" title="2. IT知识研究领域"></a>2. IT知识研究领域</h4><div><br>        我主要学习的是Python，所以我的博客内容主要围绕着python来展开的，当然这只是一种编写程序的语言方式，所以本质上还是编程以及相关内容，比如Linux，web开发，框架，算法，爬虫，人工智能等，我个人对人工智能非常感兴趣，所以也会慢慢往这个方向去靠近，机器学习，神经网络等，自己慢慢研究学习吧。<br></div>        <h4 id="3-写博客文章的一些基本格式与上传命令"><a href="#3-写博客文章的一些基本格式与上传命令" class="headerlink" title="3. 写博客文章的一些基本格式与上传命令"></a>3. 写博客文章的一些基本格式与上传命令</h4><div><br>        为了以后方便写博客，对于我这个博客小白，还是有必要在这里对于一些文章相关格式及命令，进行总结的。<br>        通过github+hexo搭建好博客后，如何创建一篇新博客呢<br>        在搭建博客的时候，会安装git软件，在根目录下打开git，通过git命令来执行，新建一篇博客：<br></div><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo <span class="keyword">new</span> <span class="string">"你的博客的名称"</span></span><br></pre></td></tr></table></figure><br><br><div><br>    然后在根目录文件夹下source/_posts下新生成一个md文件，名称就是你自己起的名字，打开就可以开始写博客啦，要用markdown语法写，所以要提前准备一款编辑器，我个人用的是小书匠编辑器，还不错。<br>    文章的一些格式属性有以下几种可以自己设置：<br></div><br><figure class="highlight subunit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">title: 文章标题</span><br><span class="line">date:  创建时间，这里可以随意修改</span><br><span class="line">categories:  文章分类目录，可以为空</span><br><span class="line"><span class="keyword">tags:</span> 文章标签，可空，多标签请用格式[tag1,tag2,tag3]</span><br><span class="line">description: 对本页的描述，相当于是一个简介，如果这个定义了，就会在首页中出现这里的内容而不会出现整个文章详细内容。</span><br></pre></td></tr></table></figure><br><br><div><br>     然后下面就可以开始写文章了，写完即可通过git上传了<br>    </div> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure><div><br>     即可部署到github上。<br></div><h4 id="4-开启博客之旅"><a href="#4-开启博客之旅" class="headerlink" title="4.开启博客之旅"></a>4.开启博客之旅</h4><div><br>        以前的学习笔记都记录在本子上，或者其他文档里，之后将会慢慢整理在自己的博客上，来完善自己的学习体系，同时搭建自己的博客，让自己的博客更炫酷。<br></div>]]></content>
+    
+    <summary type="html">
+    
+      个人初建博客的一些随笔以及写文章的属性格式等
+    
+    </summary>
+    
+      <category term="随笔" scheme="http://changhai404.com/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="第一篇" scheme="http://changhai404.com/tags/%E7%AC%AC%E4%B8%80%E7%AF%87/"/>
     
   </entry>
   
